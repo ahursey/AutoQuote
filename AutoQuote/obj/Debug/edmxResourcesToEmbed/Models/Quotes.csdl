@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AutoQuotesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="QuoteList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="firstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="emailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="carYear" Type="Int32" Nullable="false" />
+    <Property Name="carMake" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="carModel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="speedTickets" Type="Int16" Nullable="false" />
+    <Property Name="DUI" Type="Boolean" />
+    <Property Name="fullCoverage" Type="Boolean" />
+    <Property Name="completedQuote" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="AutoQuotesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="QuoteLists" EntityType="Self.QuoteList" />
+  </EntityContainer>
+</Schema>

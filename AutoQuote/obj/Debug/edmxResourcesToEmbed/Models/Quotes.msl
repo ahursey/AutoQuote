@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AutoQuotesModelStoreContainer" CdmEntityContainer="AutoQuotesEntities">
+    <EntitySetMapping Name="QuoteLists">
+      <EntityTypeMapping TypeName="AutoQuotesModel.QuoteList">
+        <MappingFragment StoreEntitySet="QuoteList">
+          <ScalarProperty Name="completedQuote" ColumnName="completedQuote" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="emailAddress" ColumnName="emailAddress" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="carYear" ColumnName="carYear" />
+          <ScalarProperty Name="carMake" ColumnName="carMake" />
+          <ScalarProperty Name="carModel" ColumnName="carModel" />
+          <ScalarProperty Name="speedTickets" ColumnName="speedTickets" />
+          <ScalarProperty Name="DUI" ColumnName="DUI" />
+          <ScalarProperty Name="fullCoverage" ColumnName="fullCoverage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

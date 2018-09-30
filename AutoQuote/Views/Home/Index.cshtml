@@ -1,0 +1,53 @@
+﻿<div class="row no-gutters center-block">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h3 class="m-0">Auto Quote Form</h3>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Quote", "Home", FormMethod.Post))
+            {
+            <div class="row no-gutters center-block">
+                <div class="form-group col-md-12">
+                    <input name="firstName" type="text" class="form-control" placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="lastName" type="text" class="form-control" placeholder="Last Name" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="emailAddress" type="email" class="form-control" placeholder="Email Address" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="DOB" type="date" class="form-control" placeholder="Date of Birth" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="carYear" type="text" class="form-control" placeholder="Car Year" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="carMake" type="text" class="form-control" placeholder="Car Make" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="carModel" type="text" class="form-control" placeholder="Car Model" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="speedTickets" type="number" class="form-control" placeholder="Number of Speeding Tickets" />
+                </div>
+                <div class="form-group col-md-12 form-inline">
+                    Have you ever received a DUI?
+                    <input name="DUI" value="true" type="radio" class="form-control" /> Yes
+                    <input name="DUI" value="false" type="radio" class="form-control" /> No
+                </div>
+                <div class="form-group col-md-12 form-inline">
+                    Would you like full coverage?
+                    <input name="fullCoverage" value="true" type="radio" class="form-control" /> Yes
+                    <input name="fullCoverage" value="false" type="radio" class="form-control" /> No
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-block">
+                        Submit
+                    </button>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>
